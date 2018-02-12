@@ -1,0 +1,33 @@
+Also see: jan30notes.txt from jmynes/COM331-railstour
+
+https://github.com/app-2018/agiletour
+
+Rebuild db when switching computers:
+rake db:setup
+
+probably do not:
+rake db:migrate will pile up over time
+
+
+to see what we're working with in ohmyzsh
+which ggpush
+
+which is:
+aliased to ${git_current_branch}
+
+http://edgeguides.rubyonrails.org/active_record_migrations.html
+
+older docs:
+http://guides.rubyonrails.org/v3.2/migrations.html#supported-types
+
+
+Store phone number as string cause we're not likely going to do integer calculations with it!
+  Not an int just because the data is a number, account for what we do with it (-)
+
+
+from irb:
+
+@posts.each.do |post|
+  post.title
+end
+puts post.title
